@@ -12,6 +12,7 @@ interface Props {
 const GameCard = ({ game }: Props) => {
   return (
     <Card
+      width="300px"
       borderRadius={10}
       overflow="hidden"
       transition="transform 0.3s ease-in-out"
@@ -19,7 +20,7 @@ const GameCard = ({ game }: Props) => {
         boxShadow: "lg",
         size: "1.1rem",
         transform: "scale(1.05)",
-        transition: "transform 0.3s ease-in-out"
+        transition: "transform 0.3s ease-in-out",
       }}
     >
       <Image src={getCroppedImageUrl(game.background_image)} />
